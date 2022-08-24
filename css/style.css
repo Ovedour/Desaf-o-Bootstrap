@@ -1,0 +1,93 @@
+/* Llamar a una fuente desde Google FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&family=Sofia&display=swap');
+
+
+.imagenes-restaurantes{
+    width: 300px;
+    height: 300px;
+}
+
+.imagenes-galeria{
+  width: 330px;
+  height: 300px;
+}
+
+.banner{
+    display: block;
+      margin: 0 auto;
+      width: 40%;
+}
+/* Mejorado el invocar una imagen de fondo con opacidad */
+.fondo{
+     z-index: -9;
+    min-height: 100%;
+    min-width: 1024px; 
+    width: 100%;
+    height: auto;
+  position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 20%;
+  }
+
+/* Uso de important para sobrepasar los lineamientos establecidos por default gracias a Bootstrap */
+
+  .mt-0 {
+    margin-top: 30px !important;
+  }
+
+  .card-width{
+    width: 330px !important;
+  }
+
+  .card-title-size{
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 330px !important;
+    height: 33px !important;
+  }
+
+  .reset-padding{
+    padding: 0 !important;
+  }
+
+
+  /* Hover para las imagenes en la galería */
+  .container-fade {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container-fade:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container-fade:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
